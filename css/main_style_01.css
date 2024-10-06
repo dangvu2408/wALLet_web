@@ -24,6 +24,11 @@ ol, p, ul {
     padding: 0;
 }
 
+blockquote, body, dd, dl, dt, fieldset, figure, h1, h2, h3, h4, h5, h6, hr, html, iframe, legend, li, ol, p, pre, textarea, ul {
+    margin: 0;
+    padding: 0;
+}
+
 input {
     padding: 0;
     border: none;
@@ -40,6 +45,11 @@ button {
     color: inherit;
     background-color: transparent;
     word-break: normal;
+}
+
+img, video {
+    height: auto;
+    width: 100%;
 }
 
 *:focus {
@@ -110,6 +120,10 @@ button {
     }
 }
 
+.wl-navbar-item .feather {
+    margin-right: 15px;
+}
+
 .wl-sidebar .wl-navbar-menu .wl-navbar-item.is-active {
     background-color: #0e99ac;
     color: lavender;
@@ -157,9 +171,15 @@ button {
     width: 100%;
 }
 
+.level-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .wl-header .level-left {
     flex-grow: 1;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 .wl-header .level-left .wl-btn {
@@ -226,4 +246,57 @@ button {
     left: auto;
     font-size: 14px;
     top: 10px;
+}
+
+.wl-header .level-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.wl-header .level-right .setting-item {
+    position: relative;
+    margin-right: 15px;
+}
+
+.wl-header .level-right .setting-item>.wl-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 999px;
+}
+
+.user-setting {
+    position: relative;
+}
+
+.wl-avatar-frame {
+    border-radius: 999px;
+    height: 40px;
+}
+
+.level-header img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.user-setting {
+    position: relative;
+}
+
+.wl-avatar-frame .wl-btn {
+    line-height: unset;
+}
+
+.is-40x40 {
+    width: 40px;
+    height: 40px;
+}
+
+.is-rounded {
+    overflow: hidden;
+    border-radius: 999px !important;
 }
