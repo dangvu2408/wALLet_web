@@ -1,0 +1,229 @@
+@font-face {
+    font-family: 'Averta';
+    src: url('../resources/font/averta_regular.otf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Averta Bold';
+    src: url('../resources/font/averta_bold.otf') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Averta', sans-serif;
+}
+
+ol, p, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    word-break: normal; 
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    word-break: normal;
+}
+
+*:focus {
+    outline: none;
+}
+
+#root {
+    position: relative;
+    overflow: hidden;
+}
+
+.wl-section {
+    display: flex;
+    width: 100%;
+    min-width: 768px;
+    height: 100vh;
+}
+
+/* aside */
+
+.wl-sidebar {
+    position: relative;
+    z-index: 100;
+    width: 260px;
+    background-color: #10B6CC;
+    height: 100%;
+}
+
+.wl-sidebar .wl-sidebar-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.wl-sidebar .wl-navbar {
+    width: 100%;
+}
+
+.wl-logo {
+    width: 180px;
+    height: 70px;
+    background-image: url(/resources/images/app_logo.png);
+    filter: drop-shadow(0 0 0.75rem gray);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 20px 30px 20px 30px;
+} 
+
+.wl-navbar-main {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.wl-sidebar .wl-navbar-menu .wl-navbar-item {
+    font-weight: 900;
+    color: var(--navigation-text);
+    border-left: 3px solid transparent;
+    padding-left: 30px;
+    cursor: pointer;
+    a {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        color: white;
+        line-height: 20px;
+        font-weight: 800;
+        padding: 12px 10px 12px 0px;
+    }
+}
+
+.wl-sidebar .wl-navbar-menu .wl-navbar-item.is-active {
+    background-color: #0e99ac;
+    color: lavender;
+    border-color: white;
+}
+
+
+.wl-sidebar .wl-navbar-menu .wl-navbar-item a>img {
+    margin-right: 10px;
+}
+
+.sidebar-divide {
+    position: relative;
+    height: 1px;
+}
+
+.sidebar-divide:after {
+    content: "";
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    top: 0;
+}
+
+/* header */
+
+.wl-header {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left: 260px;
+    top: 0;
+    right: 0;
+    height: 70px;
+    padding: 0 60px;
+    z-index: 100;
+    min-width: 660px;
+    transition: right .4s;
+}
+
+.wl-header .level-header {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.wl-header .level-left {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.wl-header .level-left .wl-btn {
+    display: flex;
+    align-items: center;
+}
+
+.wl-header .level-left .search {
+    position: relative;
+    width: 100%;
+    max-width: 440px;
+}
+
+.wl-btn {
+    border-radius: 999px;
+    line-height: normal;
+    display: inline-block;
+    text-transform: none;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    position: relative;
+    border: none;
+}
+
+.search_container {
+    position: relative;
+    border-radius: 20px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.search_container .input-wrapper {
+    position: absolute;
+    top: 0;
+    left: 38px;
+    right: 10px;
+    bottom: 0;
+}
+
+.search_container input {
+    margin: 0;
+    display: inline-block;
+    width: 95%;
+    font-size: 16px;
+    color: #282828;
+    background-clip: padding-box;
+    border: none;
+    position: relative;
+    height: 100%;
+    line-height: 34px;
+}
+
+.search_container .feather {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+    color: #757575;
+}
+
+.search_container .feather-x {
+    right: 15px;
+    left: auto;
+    font-size: 14px;
+    top: 10px;
+}
