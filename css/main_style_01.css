@@ -3,19 +3,39 @@
     src: url('../resources/font/averta_regular.otf') format('woff2');
     font-weight: normal;
     font-style: normal;
-  }
+}
   
-  @font-face {
+@font-face {
     font-family: 'Averta Bold';
     src: url('../resources/font/averta_bold.otf') format('woff2');
     font-weight: bold;
     font-style: normal;
-  }
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    z-index: 101;
+}
+  
+::-webkit-scrollbar-track {
+    background: white;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: #10B6CC;;
+    border-radius: 20px;
+}
 
 body {
     margin: 0;
     padding: 0;
     font-family: 'Averta', sans-serif;
+}
+
+div, p {
+    word-wrap: break-word;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 ol, p, ul {
@@ -63,6 +83,8 @@ img, video {
 
 .wl-section {
     display: flex;
+    position: relative;
+    overflow: hidden;
     width: 100%;
     min-width: 768px;
     height: 100vh;
@@ -157,13 +179,16 @@ img, video {
     position: fixed;
     left: 260px;
     top: 0;
-    right: 0;
+    right: 8px;
     height: 70px;
-    padding: 0 60px;
+    padding: 0 52px 0 60px;
     z-index: 100;
     min-width: 660px;
-    transition: right .4s;
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    background-color: hsla(0, 0%, 100%, 0.5);
 }
+
 
 .wl-header .level-header {
     position: relative;
