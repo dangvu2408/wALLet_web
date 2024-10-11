@@ -1,14 +1,28 @@
 @font-face {
     font-family: 'Averta';
     src: url('../resources/font/averta_regular.otf') format('woff2');
-    font-weight: normal;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Averta';
+    src: url('../resources/font/averta_semibold.otf') format('woff2');
+    font-weight: 700;
     font-style: normal;
 }
   
 @font-face {
-    font-family: 'Averta Bold';
+    font-family: 'Averta';
     src: url('../resources/font/averta_bold.otf') format('woff2');
-    font-weight: bold;
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Averta';
+    src: url('../resources/font/averta_extrabold.otf') format('woff2');
+    font-weight: 1200;
     font-style: normal;
 }
 
@@ -54,6 +68,7 @@ input {
     border: none;
     font: inherit;
     color: inherit;
+    font-weight: 500;
     background-color: transparent;
     word-break: normal; 
 }
@@ -70,6 +85,18 @@ button {
 img, video {
     height: auto;
     width: 100%;
+}
+
+a, a.active, a:hover {
+    text-decoration: none;
+}
+
+a {
+    cursor: pointer;
+    color: inherit;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
 }
 
 *:focus {
