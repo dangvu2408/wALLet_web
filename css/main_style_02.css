@@ -73,6 +73,11 @@ main.wl-section>.container {
     font-weight: 1200;
 }
 
+.wl-finance-chart .section-header>svg {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
 .wl-columns {
     display: -moz-flex;
     display: flex;
@@ -99,12 +104,16 @@ main.wl-section>.container {
 
 .chart-column {
     width: 60%;
-    background-color: burlywood;
 }
+
 .wl-finance-chart .recent-item {
     border-radius: 15px !important;
     margin-bottom: 10px;
     background-color: hsla(0, 0%, 100%, .07);
+}
+
+.third {
+    margin-bottom: 0px !important;
 }
 
 .recent-item {
@@ -167,7 +176,7 @@ main.wl-section>.container {
     width: 100%;
     font-weight: 700;
     font-size: 18px;
-    line-height: 1.8;
+    line-height: 1.6;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -183,7 +192,6 @@ main.wl-section>.container {
 
 .wl-chart-container {
     position: relative;
-    height: 300px;
     margin-bottom: 10px;
 }
 
