@@ -1,6 +1,6 @@
 
-
-const ctx = document.getElementById('wl-chart').getContext('2d');
+const canvasItem = document.getElementById('wl-chart');
+const ctx = canvasItem.getContext('2d');
 const customFont = new FontFace('Averta Semibold', 'url(/resources//font/averta_semibold.otf)');
 customFont.load().then(function(loadedFont) {
     document.fonts.add(loadedFont);
@@ -71,3 +71,4 @@ customFont.load().then(function(loadedFont) {
 }).catch(function(error) {
     console.error('Font loading failed:', error);
 });
+
