@@ -104,6 +104,12 @@ bal_shown.onclick = function() {
         eye_dont_show.style.display = 'none';
         isShow = true;
     }
-
-
 }
+
+const navbarItem = document.querySelectorAll('.wl-navbar-item');
+navbarItem.forEach(item => {
+    item.addEventListener('click', function() {
+        document.querySelector('.is-active').classList.remove('is-active');
+        this.classList.add('is-active');
+    });
+});
