@@ -72,6 +72,8 @@ customFont.load().then(function(loadedFont) {
     console.error('Font loading failed:', error);
 });
 
+
+
 const bal_shown = document.getElementById('bal-shown');
 const eye_dont_show = document.getElementById('eye_dont_show');
 const eye_show = document.getElementById('eye_show');
