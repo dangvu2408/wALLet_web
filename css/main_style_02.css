@@ -289,13 +289,9 @@ main.wl-section>.container {
     overflow: hidden;
 }
 
-.wl-finance-chart .wl-chart-container {
-    margin-bottom: 20px;
-}
 
 .wl-chart-container {
     position: relative;
-    margin-bottom: 10px;
     height: 100%;
 }
 
@@ -314,3 +310,13 @@ main.wl-section>.container {
 }
 
 
+.tooltip {
+    position: absolute;
+    background-color: white;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    font-size: 12px;
+    display: none;
+}
